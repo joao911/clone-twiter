@@ -1,6 +1,16 @@
 import React from 'react';
+import ProfilePage from '../ProfilePage';
 
-import {Container, Header, BackIcon, ProfileInfo} from   './styles';
+import {Container,
+         Header, 
+         BackIcon,
+         ProfileInfo,
+        BottomMenu,
+        HomeIcon,
+        BellIcon,
+        SearchIcon,
+        EmailIcon
+        } from   './styles';
 
 const Main: React.FC = () => {
   return (
@@ -14,13 +24,13 @@ const Main: React.FC = () => {
                   <span>00 Tweets</span>
               </ProfileInfo>
           </Header>
-          {/* <PrefilePage/>
+         <ProfilePage/>
           <BottomMenu>
-              <HomeIcon/>
+              <HomeIcon className="active"/>
               <SearchIcon/>
               <BellIcon/>
               <EmailIcon/>
-          </BottomMenu> */}
+          </BottomMenu> 
           
 
       </Container>
